@@ -144,9 +144,16 @@ $(document).ready(function() {
 
 <!-- スマホ時のみ「ニキビの仕組み」3画像を中央寄せで縮小（PC表示は変更なし） -->
 <style>
+/* アンカー先の見出しが固定ヘッダーに隠れないように */
+#case01,#case02,#case03,#case04,#case05,#case06{scroll-margin-top:140px;}
 @media (max-width:767px){
-  .pore_steps li img{max-width:55%;}
-  .pore_steps li p{text-align:center;}
+  #case01,#case02,#case03,#case04,#case05,#case06{scroll-margin-top:70px;}
+  /* お悩み・4つの働き：スマホは1列 */
+  .nayami_list > li{width:100%!important;}
+  .reasons4 > li{width:100%!important;}
+  /* ニキビの仕組み：スマホでも横3列に並べる */
+  .pore_steps > li{width:31%!important;}
+  .pore_steps li p{text-align:center;font-size:78%;}
 }
 </style>
 
@@ -177,7 +184,7 @@ $(document).ready(function() {
 
 <div class="box">
 <h2 class="inside_headline">こんなお悩みはありませんか？</h2>
-<ul class="common_flex_box" style="flex-wrap:wrap;">
+<ul class="common_flex_box nayami_list" style="flex-wrap:wrap;">
 <li style="width:48%;list-style:none;border-bottom:1px dashed #E3B9B9;padding:8px 0 8px 30px;position:relative;"><i class="fas fa-check-circle" style="position:absolute;left:0;top:10px;color:#E09696;"></i>ニキビが何度も繰り返してしまう</li>
 <li style="width:48%;list-style:none;border-bottom:1px dashed #E3B9B9;padding:8px 0 8px 30px;position:relative;"><i class="fas fa-check-circle" style="position:absolute;left:0;top:10px;color:#E09696;"></i>ニキビ痕の赤みや色素沈着が気になる</li>
 <li style="width:48%;list-style:none;border-bottom:1px dashed #E3B9B9;padding:8px 0 8px 30px;position:relative;"><i class="fas fa-check-circle" style="position:absolute;left:0;top:10px;color:#E09696;"></i>市販のニキビケアでは効果を感じられなかった</li>
@@ -233,7 +240,28 @@ $(document).ready(function() {
 <div class="box" id="case01">
 <h2 class="inside_headline">アゼライン酸の4つの働き</h2>
 <p class="con_lead">アクネ菌・毛穴の詰まり・炎症・色素沈着。ニキビの一連のサイクルに多角的にアプローチします。</p>
-<p style="text-align:center;margin:0;"><img src="img/azelaic_4actions.webp" alt="アゼライン酸の4つの働き：抗菌・角化抑制・抗炎症・美白" style="width:100%;max-width:880px;height:auto;"/></p>
+<ul class="common_flex_box reasons4" style="flex-wrap:wrap;">
+<li style="width:48%;background:#fff;border:1.6px solid #E3B9B9;border-radius:10px;padding:22px;margin-bottom:20px;">
+<p style="text-align:center;margin:0 0 6px;"><i class="fas fa-shield-virus" style="font-size:40px;color:#E09696;"></i></p>
+<p class="mgn_btm10" style="font-weight:700;color:#BA6161;font-size:116%;text-align:center;">抗菌作用</p>
+<p class="mgn_btm0">アクネ菌の増殖を抑え、ニキビの発生・悪化を防ぎます。</p>
+</li>
+<li style="width:48%;background:#fff;border:1.6px solid #E3B9B9;border-radius:10px;padding:22px;margin-bottom:20px;">
+<p style="text-align:center;margin:0 0 6px;"><i class="fas fa-bullseye" style="font-size:40px;color:#E09696;"></i></p>
+<p class="mgn_btm10" style="font-weight:700;color:#BA6161;font-size:116%;text-align:center;">角化を抑制</p>
+<p class="mgn_btm0">毛穴の過剰な角化を抑え、つまり（コメド）を防ぎます。</p>
+</li>
+<li style="width:48%;background:#fff;border:1.6px solid #E3B9B9;border-radius:10px;padding:22px;margin-bottom:20px;">
+<p style="text-align:center;margin:0 0 6px;"><i class="fas fa-droplet" style="font-size:40px;color:#E09696;"></i></p>
+<p class="mgn_btm10" style="font-weight:700;color:#BA6161;font-size:116%;text-align:center;">抗炎症作用</p>
+<p class="mgn_btm0">炎症をやわらげ、赤ニキビや赤みを穏やかに鎮めます。</p>
+</li>
+<li style="width:48%;background:#fff;border:1.6px solid #E3B9B9;border-radius:10px;padding:22px;margin-bottom:20px;">
+<p style="text-align:center;margin:0 0 6px;"><i class="fas fa-wand-magic-sparkles" style="font-size:40px;color:#E09696;"></i></p>
+<p class="mgn_btm10" style="font-weight:700;color:#BA6161;font-size:116%;text-align:center;">美白作用</p>
+<p class="mgn_btm0">メラニンの生成を抑え、ニキビ痕の色素沈着にアプローチします。</p>
+</li>
+</ul>
 </div>
 
 </div><!--end contents-->

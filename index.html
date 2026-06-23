@@ -144,14 +144,16 @@ $(document).ready(function() {
 
 <!-- スマホ時のみ「ニキビの仕組み」3画像を中央寄せで縮小（PC表示は変更なし） -->
 <style>
-/* モバイルでの文字サイズ自動拡大を無効化（上部・下部でサイズがばらつく／改行が乱れる現象の対策） */
+/* モバイルでの文字サイズ自動拡大を無効化（実機で本文が勝手に拡大／改行が乱れる現象の対策） */
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%;}
 /* アンカー先の見出しが固定ヘッダーに隠れないように */
 #case01,#case02,#case03,#case04,#case05,#case06{scroll-margin-top:140px;}
+/* ヒーローのキャッチコピー（PCはやや大きめ） */
+.hero_lead{font-size:120%;}
 @media (max-width:767px){
   #case01,#case02,#case03,#case04,#case05,#case06{scroll-margin-top:70px;}
-  /* 本文の文字サイズをテーマ標準(common_txt=16px)に統一（注釈は除く） */
-  .main .contents p:not(.txt80per):not(.txt70per){font-size:16px;}
+  /* キャッチをスマホで1行に収める */
+  .hero_lead{font-size:15px;}
   /* お悩み・4つの働き：スマホは1列 */
   .nayami_list > li{width:100%!important;}
   .reasons4 > li{width:100%!important;}
@@ -183,7 +185,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%;}
 
 <figure class="medical_img mgn_btm20"><img src="img/hero_skin.webp" alt="なめらかな素肌の女性とDRX AZAクリアによるアゼライン酸ケア"/></figure>
 
-<p class="con_lead" style="font-size:128%;line-height:1.55;text-align:center;font-weight:700;">皮膚科医が着目する“アゼライン酸”ケア。<br>繰り返すニキビ・ニキビ痕・赤ら顔に。</p>
+<p class="con_lead hero_lead" style="line-height:1.55;text-align:center;font-weight:700;">皮膚科医が着目するアゼライン酸ケア。<br>繰り返すニキビ・ニキビ痕・赤ら顔に。</p>
 <p class="common_txt" style="text-align:center;">ロート製薬が開発した「DRX AZAクリア」は、医療機関でのみ取り扱いが可能な<span class="marker">高濃度アゼライン酸配合クリーム</span>です。洗顔やスキンケアだけでは防ぎきれないニキビの発生サイクルにアプローチし、毎日のホームケアで“できにくい肌”へ導きます。</p>
 
 <div class="box">

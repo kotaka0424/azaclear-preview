@@ -144,16 +144,20 @@ $(document).ready(function() {
 
 <!-- スマホ時のみ「ニキビの仕組み」3画像を中央寄せで縮小（PC表示は変更なし） -->
 <style>
+/* モバイルでの文字サイズ自動拡大を無効化（上部・下部でサイズがばらつく／改行が乱れる現象の対策） */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;}
 /* アンカー先の見出しが固定ヘッダーに隠れないように */
 #case01,#case02,#case03,#case04,#case05,#case06{scroll-margin-top:140px;}
 @media (max-width:767px){
   #case01,#case02,#case03,#case04,#case05,#case06{scroll-margin-top:70px;}
+  /* 本文の文字サイズをテーマ標準(common_txt=16px)に統一（注釈は除く） */
+  .main .contents p:not(.txt80per):not(.txt70per){font-size:16px;}
   /* お悩み・4つの働き：スマホは1列 */
   .nayami_list > li{width:100%!important;}
   .reasons4 > li{width:100%!important;}
-  /* ニキビの仕組み：スマホでも横3列に並べる */
+  /* ニキビの仕組み：スマホでも横3列に並べる（ラベルは小さめ） */
   .pore_steps > li{width:31%!important;}
-  .pore_steps li p{text-align:center;font-size:78%;}
+  .pore_steps li p{text-align:center;font-size:11px!important;}
 }
 </style>
 

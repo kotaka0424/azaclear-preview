@@ -1,0 +1,30 @@
+
+/* =================================================================
+   DRX AZAクリア ページ：AZAクリアセラム追加分（2026-11-16）
+   ・すべて .azaclear-page スコープ
+   ================================================================= */
+/* ---- AZAクリアセラム追加（2026-11）---- */
+/* 新登場セクション：NEWバッジ・特長リスト・比較への導線 */
+.azaclear-page .azaclear-new-badge { display:inline-block; background:#E09696; color:#fff; font-weight:600; font-size:14px; letter-spacing:.15em; border-radius:999px; padding:.3em 1.4em; }
+.azaclear-page .azaclear-serum-points { background:#fff; border-radius:8px; padding:1.2rem 1.2rem .4rem; }
+.azaclear-page .azaclear-serum-points .text-line { font-size:15px; line-height:1.7; }
+.azaclear-page .azaclear-serum-points .text-line::before { background-color:#E09696; }
+.azaclear-page .azaclear-small { display:block; font-size:12px; color:#888; margin-top:.2em; }
+.azaclear-page .azaclear-anchor a { color:#E09696; font-weight:600; text-decoration:underline; text-underline-offset:4px; }
+.azaclear-page .azaclear-anchor a::after { content:" \203A"; }
+/* 比較表：1列目（項目名）を見出し色に */
+.azaclear-page .azaclear-compare-table td:first-child { background-color:#FAF8F0 !important; font-weight:600; }
+.azaclear-page .azaclear-compare-list .text-line { font-size:15px; line-height:1.7; }
+.azaclear-page .azaclear-compare-list .text-line::before { background-color:#E09696; }
+@media (max-width:767px){
+  .azaclear-page .azaclear-compare-table { font-size:14px; }
+  .azaclear-page .azaclear-compare-table th:first-child,
+  .azaclear-page .azaclear-compare-table td:first-child { width:6rem; font-size:13px; padding-left:.3rem; padding-right:.3rem; }
+  .azaclear-page .azaclear-compare-table th,
+  .azaclear-page .azaclear-compare-table td { padding-left:.4rem; padding-right:.4rem; }
+  .azaclear-page .azaclear-compare-list.left-border { margin-right:0; }
+}
+@media (min-width:768px){
+  /* PC：比較表の項目名を折り返さない */
+  .azaclear-page .azaclear-compare-table td:first-child { white-space:nowrap; width:11rem; }
+}

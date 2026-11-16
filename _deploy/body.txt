@@ -119,6 +119,7 @@
 <div class="left-content">
 <h3 class="h3-mgn">ニキビの原因になる<br>毛穴の詰まりを抑制</h3>
 <img src="https://ebinahifu.com/wp-content/uploads/2026/08/aza_tsumari.webp" alt="なめらかな頬に触れる女性" class="img-fluid azaclear-photo sp-only">
+
 <div class="font-go fs-pc spa-wei mt-3 mt-md-0">
 <p>AZAクリアに含まれるアゼライン酸には、毛穴の詰まりの原因となる、毛穴内での過剰な角化（角質が厚くなる現象）を抑える働きがあります。毛穴が詰まるとアクネ菌が増殖しやすい肌環境になりますが、アゼライン酸は<span class="azaclear-label">この詰まりを改善することで、ニキビが繰り返し発生しにくいようにお肌の状態を整えます</span>。</p>
 <p>洗顔やスキンケアだけでは防ぎきれないニキビの発生サイクルを断ち切る、毎日のケアに適した処方になっています。</p>
